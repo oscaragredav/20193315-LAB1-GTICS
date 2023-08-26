@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HomeController {
 
-    @RequestMapping(value = {"/","/principal"},method = RequestMethod.GET)
-    @ResponseBody
+    @RequestMapping(value = {"/","","/principal"},method = RequestMethod.GET)
     public String paginaPrincipal(){
-        return "probandoooo";
+        return "init";
     }
 }
